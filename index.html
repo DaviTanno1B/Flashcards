@@ -1,33 +1,88 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Flashcards de Mitos e Verdades</title> 
-  </head> 
-  <body> 
-    <header> 
-        <h1>Confere Ai</h1>
-        <nav>
-            <a href="#">Inicio</a>
-        </nav>
-    </header> 
-    <main> 
-        <h2>Descubra a verdade passando o mouse</h2>
-        <article>
-            <div>
-    <div> 
-        <img src="C:\Users\user\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\BE321106272267885A91A88D6926666D80F717F8\transfers\2026-34\WhatsApp Image 2026-08-25 at 17.38.46.jpeg" 
-        <p>Pinguins conseguem voar como passaros!</p>
-    </div>
-    <div>
-    <img src="https://cdn.discordapp.com/attachments/1505032524093722668/1541912235646128188/WhatsApp_Image_2026-08-25_at_17.38.46.jpeg?ex=6a8f512c&is=6a8dffac&hm=f62ce496c347d13029a08e3213eb223f48561458dab038c2a05d606d76e867d8&" alt="Pinguim">
-    <p>Pinguins nao voam, mas sao excelentes nadadores.</p>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Física - Prof. Renê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flashcards - Óptica</h1>
+        <p>Conceitos do Professor Renê</p>
+        
+        <button id="btn-tema">Ativar Modo Escuro</button>
+    </header>
+
+    <main id="container-cards">
+        
+        <article class="cartao" onclick="virarCartao(this)">
+            <div class="cartao-interno">
+                <div class="cartao-frente">
+                    <img src="" alt="Propriedades da luz">
+                    <h2>Propriedades da Luz</h2>
+                </div>
+                <div class="cartao-costas">
+                    <h3>Propriedades da Luz</h3>
+                    <p>A luz é uma onda eletromagnética que viaja em linha reta. Ela pode ser absorvida, refletida ou refratada quando encontra diferentes materiais.</p>
+                </div>
+            </div>
         </article>
-    </main> 
-    <footer> 
-    </footer> 
-  </body> 
-</html> 
+
+        <article class="cartao" onclick="virarCartao(this)">
+            <div class="cartao-interno">
+                <div class="cartao-frente">
+                    <img src="" alt="Reflexão e Espelhos">
+                    <h2>Reflexão e Espelhos</h2>
+                </div>
+                <div class="cartao-costas">
+                    <h3>Reflexão e Espelhos</h3>
+                    <p>Ocorre quando a luz bate em uma superfície e volta. Em espelhos planos, a imagem formada é virtual, direita e do mesmo tamanho do objeto.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="cartao" onclick="virarCartao(this)">
+            <div class="cartao-interno">
+                <div class="cartao-frente">
+                    <img src="" alt="Fenômenos da luz">
+                    <h2>Fenômenos da Luz</h2>
+                </div>
+                <div class="cartao-costas">
+                    <h3>Fenômenos da Luz</h3>
+                    <p>Incluem a dispersão (como o arco-íris), onde a luz branca se separa em várias cores, a difração e a interferência das ondas luminosas.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="cartao" onclick="virarCartao(this)">
+            <div class="cartao-interno">
+                <div class="cartao-frente">
+                    <img src="" alt="Lentes">
+                    <h2>Lentes</h2>
+                </div>
+                <div class="cartao-costas">
+                    <h3>Lentes</h3>
+                    <p>São meios transparentes que refratam a luz. Podem ser convergentes (como uma lupa, que junta os raios) ou divergentes (que espalham os raios).</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="cartao" onclick="virarCartao(this)">
+            <div class="cartao-interno">
+                <div class="cartao-frente">
+                    <img src="" alt="Óptica do corpo humano">
+                    <h2>Óptica do Corpo Humano</h2>
+                </div>
+                <div class="cartao-costas">
+                    <h3>Óptica do Corpo Humano</h3>
+                    <p>O olho humano funciona como uma câmera. O cristalino age como uma lente convergente que foca a luz diretamente na retina para formar a imagem.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
