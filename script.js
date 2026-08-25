@@ -1,7 +1,6 @@
 function virarCartao(elementoCard) {
     elementoCard.classList.toggle('virado');
 }
-
 const botaoTema = document.getElementById('btn-tema');
 
 botaoTema.addEventListener('click', function() {

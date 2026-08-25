@@ -62,7 +62,7 @@ header {
     transform-style: preserve-3d;
 }
 
-.cartao.virado .cartao-interno {
+.cartao:hover .cartao-interno {
     transform: rotateY(180deg);
 }
 
