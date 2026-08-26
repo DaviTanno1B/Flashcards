@@ -3,86 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards de Física - Prof. Renê</title>
+    <title>Flashcards - Prof. Renê</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <main class="container">
         <h1>Flashcards - Óptica</h1>
-        <p>Conceitos</p>
-        
-        <button id="btn-tema">Ativar Modo Escuro</button>
-    </header>
 
-    <main id="container-cards">
-        
-       <article class="cartao">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://image.slidesharecdn.com/luz-130416061555-phpapp02/75/Luz-1-2048.jpg" alt="Propriedades da luz">
-                    <h2>Propriedades da Luz</h2>
+        <section class="grid-flashcards">
+            
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__face cartao__face--frente">
+                        <span class="categoria">Conceito</span>
+                        <img src="https://image.slidesharecdn.com/luz-130416061555-phpapp02/75/Luz-1-2048.jpg" alt="Propriedades da luz" class="cartao__imagem">
+                        <h3>Propriedades da Luz</h3>
+                    </div>
+                    <div class="cartao__face cartao__face--verso">
+                        <span class="categoria">Definição</span>
+                        <p>Luz é radiação eletromagnética visível. É uma forma de energia que se propaga no espaço por ondas com comprimentos e frequências variados. Apenas a faixa captada pela visão é chamada de luz.</p>
+                    </div>
                 </div>
-                <div class="cartao-costas">
-                    <h3>Propriedades da Luz</h3>
-                    <p>Luz é radiação eletromagnética visível. Esta radiação é uma forma de energia que se propaga no espaço por ondas que possuem comprimentos e frequências variados. De todas as combinações entre frequências e comprimentos de onda, apenas a faixa captada pela visão é que chamamos de luz.</p>
-                </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="cartao" onclick="virarCartao(this)">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmLQQRvDkWY8ER1-2Tr0ojl6ujwTlwK-hggei9Va7M0xW2bsDEO-F4Xk&s=10" alt="Reflexão e Espelhos">
-                    <h2>Reflexão e Espelhos</h2>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__face cartao__face--frente">
+                        <span class="categoria">Espelhos</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmLQQRvDkWY8ER1-2Tr0ojl6ujwTlwK-hggei9Va7M0xW2bsDEO-F4Xk&s=10" alt="Reflexão e Espelhos" class="cartao__imagem">
+                        <h3>Reflexão e Espelhos</h3>
+                    </div>
+                    <div class="cartao__face cartao__face--verso">
+                        <span class="categoria">Definição</span>
+                        <p>Ocorre quando a luz bate em uma superfície e volta. Em espelhos planos, a imagem formada é virtual, direita e do mesmo tamanho do objeto real.</p>
+                    </div>
                 </div>
-                <div class="cartao-costas">
-                    <h3>Reflexão e Espelhos</h3>
-                    <p>Ocorre quando a luz bate em uma superfície e volta. Em espelhos planos, a imagem formada é virtual, direita e do mesmo tamanho do objeto.</p>
-                </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="cartao" onclick="virarCartao(this)">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://storage.googleapis.com/prv-mkt-online-public/imagens/site/2021/01-janeiro/luz-fontes-propagacao-e-principais-fenomenos-opticos/luz-propagacao-polarizacao.png" alt="Fenômenos da luz">
-                    <h2>Fenômenos da Luz</h2>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__face cartao__face--frente">
+                        <span class="categoria">Fenômenos</span>
+                        <img src="https://storage.googleapis.com/prv-mkt-online-public/imagens/site/2021/01-janeiro/luz-fontes-propagacao-e-principais-fenomenos-opticos/luz-propagacao-polarizacao.png" alt="Fenômenos da luz" class="cartao__imagem">
+                        <h3>Fenômenos da Luz</h3>
+                    </div>
+                    <div class="cartao__face cartao__face--verso">
+                        <span class="categoria">Definição</span>
+                        <p>Incluem a dispersão (como o arco-íris, onde a luz branca se separa em várias cores), a difração e a interferência das ondas luminosas.</p>
+                    </div>
                 </div>
-                <div class="cartao-costas">
-                    <h3>Fenômenos da Luz</h3>
-                    <p>Incluem a dispersão (como o arco-íris), onde a luz branca se separa em várias cores, a difração e a interferência das ondas luminosas.</p>
-                </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="cartao" onclick="virarCartao(this)">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://www.infoescola.com/wp-content/uploads/2010/04/vergencia2.jpg" alt="Lentes">
-                    <h2>Lentes</h2>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__face cartao__face--frente">
+                        <span class="categoria">Refração</span>
+                        <img src="https://www.infoescola.com/wp-content/uploads/2010/04/vergencia2.jpg" alt="Lentes" class="cartao__imagem">
+                        <h3>Lentes</h3>
+                    </div>
+                    <div class="cartao__face cartao__face--verso">
+                        <span class="categoria">Definição</span>
+                        <p>São meios transparentes que refratam a luz, alterando sua direção de propagação. Podem ser classificadas em convergentes ou divergentes.</p>
+                    </div>
                 </div>
-                <div class="cartao-costas">
-                    <h3>Lentes</h3>
-                    <p>São meios transparentes que refratam a luz. Podem ser convergentes ou divergentes.</p>
-                </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="cartao" onclick="virarCartao(this)">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://static.todamateria.com.br/upload/ol/ho/olhohumano-cke.jpg" alt="Óptica do corpo humano">
-                    <h2>Óptica do Corpo Humano</h2>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <div class="cartao__face cartao__face--frente">
+                        <span class="categoria">Biologia & Física</span>
+                        <img src="https://static.todamateria.com.br/upload/ol/ho/olhohumano-cke.jpg" alt="Óptica do corpo humano" class="cartao__imagem">
+                        <h3>Óptica do Corpo Humano</h3>
+                    </div>
+                    <div class="cartao__face cartao__face--verso">
+                        <span class="categoria">Definição</span>
+                        <p>O olho humano funciona como uma câmera. O cristalino age como uma lente convergente natural que foca a luz diretamente na retina para formar a imagem.</p>
+                    </div>
                 </div>
-                <div class="cartao-costas">
-                    <h3>Óptica do Corpo Humano</h3>
-                    <p>O olho humano funciona como uma câmera. O cristalino age como uma lente convergente que foca a luz diretamente na retina para formar a imagem.</p>
-                </div>
-            </div>
-        </article>
+            </article>
 
+        </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
