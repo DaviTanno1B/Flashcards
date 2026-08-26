@@ -2,108 +2,152 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #ffffff; 
-    color: #333333; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
     min-height: 100vh;
-    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.container {
-    text-align: center;
-    max-width: 1000px; 
+header {
+    background-color: #6d2813;
+    color: #ffffff;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
     width: 100%;
 }
 
-h1 {
-    margin-bottom: 2.5rem;
-    color: #0056b3; 
-    font-size: 2.2rem;
+.titulo-principal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
-.grid-flashcards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+.cartoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .cartao {
-    background-color: transparent;
-    height: 380px; 
-    perspective: 1000px; 
+    width: 180px;
+    height: 290px;
+    perspective: 1000px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
-.cartao__conteudo {
-    position: relative;
+.cartao-conteudo {
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transform-style: preserve-3d; 
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
 }
 
-.cartao:hover .cartao__conteudo {
+.cartao:hover .cartao-conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao__face {
+.cartao-face {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 12px;
-    padding: 25px 20px;
+    -webkit-backface-visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
-.cartao__face--frente, 
-.cartao__face--verso {
-    background-color: #ffffff; 
-    border: 1px solid #dcdcdc; 
-    color: #333333;
+.cartao-frente {
+    z-index: 2;
 }
 
-.cartao__face--frente h3 {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: #222222;
-}
-
-.cartao__face--verso {
+.cartao-verso {
     transform: rotateY(180deg);
 }
 
-.cartao__face--verso p {
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: center;
-}
-
-.categoria {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 12px;
-    opacity: 0.7;
-    font-weight: bold;
-    color: #0056b3; 
-}
-
-.cartao__imagem {
+.area-imagem {
     width: 100%;
-    height: 160px;
+    height: 220px;
+    background-color: #cccccc;
+    flex-shrink: 0;
+}
+
+.area-imagem img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #eeeeee;
+    display: block;
+}
+
+.cartao-texto {
+    flex: 1;
+    padding: 8px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cartao-texto p {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.cartao-texto p.resposta {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #6d2813;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left;
 }
